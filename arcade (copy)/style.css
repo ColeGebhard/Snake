@@ -1,0 +1,99 @@
+body {
+    background-color: #888398;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 50px;
+    display: inline;
+    text-align: center;
+    color: #4b5a57;
+}
+
+#title{
+    margin: 20px 0;
+}
+
+#startGame {
+    font-size: 30px;
+    margin: 10px;
+}
+
+#scoreCard {
+    padding: 10px;
+    font-size: 30px;
+    background-color: #b65c5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#grid {
+    border: 1px solid #b86343 ;
+    background-color: black;
+}
+
+.gamePad {
+    height:80px;
+    width:80px;
+}
+
+#topControls {
+    display: none;
+}
+
+#bottomControls {
+    display: none;
+}
+
+#replay{
+    margin-top:20px;
+}
+
+#replayButton {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        max-width: 420px;
+    }
+
+    header {
+        font-size: 20px;
+        display: inline;
+        text-align: center;
+        color: #4b5a57;
+    }
+
+    .gamePad {
+        height:40px;
+        width:40px;
+    }
+    
+
+    #topControls {
+        display: inline;
+        margin-top: 40px;
+    }  
+
+    #bottomControls {
+        display: flex;
+        gap:10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        font-size:30px;
+    }
+
+}
